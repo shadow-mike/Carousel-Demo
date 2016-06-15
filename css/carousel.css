@@ -1,0 +1,49 @@
+/*重置*/
+body,div,dl,dt,dd,ul,ol,li{margin:0;padding:0;}
+img{border:0;}
+ol,ul{list-style:none;}
+body{color:#666; font: 12px/1.5 '微软雅黑',tahoma,arial,'Hiragino Sans GB',宋体,sans-serif;}
+
+/*Carousel*/
+body{
+	background-color: #182821;
+	text-align: center;
+}
+pre{
+	text-align: left;
+}
+.carousel-main{
+	margin: 0 auto;
+	position: relative;
+	width: 800px;
+	/*border: 2px #305042 dashed;*/
+}
+.carousel-main .carousel-list{
+
+}
+.carousel-main .carousel-list .carousel-item{
+	position: absolute;
+	top: 0;
+}
+.carousel-main .carousel-btn{
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	/*width: 50px;*/
+	/*height: 600px;*/
+	opacity: 0.8;
+	cursor: pointer;
+	display: none;
+}
+.carousel-main .carousel-prev-btn{
+	background: url("../img/btn_l.png") no-repeat center center;
+	left: 0;
+}.carousel-main .carousel-next-btn{
+	background: url("../img/btn_r.png") no-repeat center center;
+	right: 0;
+}
+.carousel-main .carousel-list .carousel-item a,.carousel-main .carousel-list .carousel-item a img{
+	display: block;
+	text-decoration: none;
+	border-radius: 10px;
+}

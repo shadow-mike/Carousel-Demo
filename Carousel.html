@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Carousel</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="js/carousel.js"></script>
+	<link rel="stylesheet" href="css/carousel.css">
+</head>
+<body>
+	<noscript>
+		<p>本页面需要浏览器支持Javascript。</p>
+	</noscript>
+	<p>
+		<pre>
+			20160204
+			简易的Carousel插件基于jQuery
+			参数说明
+				cWidth：插件宽度；
+				cHeight：插件高度；
+				width：第一张图片(显示在最前)的宽度，数值需小于cWidth；
+				height：第一张图片的高度，数值需小于cHeight；* width与height比例需与图片自身宽高比例一致
+				speed：图片移动的速度；
+				verticalAlign：对齐方式 top、middle、bottom（传入值错误则默认top）；
+				isAutoPlay：是否自动播放下一张图片；
+				delay：自动播放的时间间隔；
+				scale：图片间的缩放比例，数值为正数且需小于或等于1。
+			鼠标移入Carousel区域，停止自动播放（第3个例子的isAutoplay为false），显示左右切换按钮。
+
+			以下展示了几种显示效果：
+		</pre>
+	</p>
+
+	<div class="J_Carousel carousel-main" data-setting='{
+															"cWidth":1000,
+															"cHeight":300,
+															"width":400,
+															"height":300,
+															"speed":300,
+															"verticalAlign":"middle",
+															"isAutoPlay":true,
+															"delay":3000,
+															"scale":0.8
+														}'>
+		<div class="carousel-btn carousel-prev-btn"></div>
+		<ul class="carousel-list">
+			<li class="carousel-item"><a href="img/logo1.png" target="_blank"><img src="img/logo1.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo2.png" target="_blank"><img src="img/logo2.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo3.png" target="_blank"><img src="img/logo3.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo4.png" target="_blank"><img src="img/logo4.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo5.png" target="_blank"><img src="img/logo5.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo6.png" target="_blank"><img src="img/logo6.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo7.png" target="_blank"><img src="img/logo7.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo8.png" target="_blank"><img src="img/logo8.png" width="100%" height="100%" alt=""></a></li>
+		</ul>
+		<div class="carousel-btn carousel-next-btn"></div>
+	</div>
+	<br/>
+	<div class="J_Carousel carousel-main" data-setting='{
+															"cWidth":700,
+															"cHeight":300,
+															"width":400,
+															"height":300,
+															"speed":1000,
+															"verticalAlign":"top",
+															"isAutoPlay":true,
+															"delay":5000,
+															"scale":1
+														}'>
+		<div class="carousel-btn carousel-prev-btn"></div>
+		<ul class="carousel-list">
+			<li class="carousel-item"><a href="img/logo1.png" target="_blank"><img src="img/logo1.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo2.png" target="_blank"><img src="img/logo2.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo3.png" target="_blank"><img src="img/logo3.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo4.png" target="_blank"><img src="img/logo4.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo5.png" target="_blank"><img src="img/logo5.png" width="100%" height="100%" alt=""></a></li>
+		</ul>
+		<div class="carousel-btn carousel-next-btn"></div>
+	</div>
+	<br/>
+	<div class="J_Carousel carousel-main" data-setting='{
+															"cWidth":500,
+															"cHeight":300,
+															"width":400,
+															"height":300,
+															"speed":200,
+															"verticalAlign":"bottom",
+															"isAutoPlay":false,
+															"delay":200,
+															"scale":0.6
+														}'>
+		<div class="carousel-btn carousel-prev-btn"></div>
+		<ul class="carousel-list">
+			<li class="carousel-item"><a href="img/logo1.png" target="_blank"><img src="img/logo1.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo2.png" target="_blank"><img src="img/logo2.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo3.png" target="_blank"><img src="img/logo3.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo4.png" target="_blank"><img src="img/logo4.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo5.png" target="_blank"><img src="img/logo5.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo6.png" target="_blank"><img src="img/logo6.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo7.png" target="_blank"><img src="img/logo7.png" width="100%" height="100%" alt=""></a></li>
+		</ul>
+		<div class="carousel-btn carousel-next-btn"></div>
+	</div>
+	<br/>
+	<div class="J_Carousel carousel-main" data-setting='{
+															"cWidth":800,
+															"cHeight":300,
+															"width":400,
+															"height":300,
+															"speed":500,
+															"verticalAlign":"middle",
+															"isAutoPlay":true,
+															"delay":2500,
+															"scale":0.8
+														}'>
+		<div class="carousel-btn carousel-prev-btn"></div>
+		<ul class="carousel-list">
+			<li class="carousel-item"><a href="img/logo1.png" target="_blank"><img src="img/logo1.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo2.png" target="_blank"><img src="img/logo2.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo3.png" target="_blank"><img src="img/logo3.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo4.png" target="_blank"><img src="img/logo4.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo5.png" target="_blank"><img src="img/logo5.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo6.png" target="_blank"><img src="img/logo6.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo7.png" target="_blank"><img src="img/logo7.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo8.png" target="_blank"><img src="img/logo8.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo1.png" target="_blank"><img src="img/logo1.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo2.png" target="_blank"><img src="img/logo2.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo3.png" target="_blank"><img src="img/logo3.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo4.png" target="_blank"><img src="img/logo4.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo5.png" target="_blank"><img src="img/logo5.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo6.png" target="_blank"><img src="img/logo6.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo7.png" target="_blank"><img src="img/logo7.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo8.png" target="_blank"><img src="img/logo8.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo1.png" target="_blank"><img src="img/logo1.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo2.png" target="_blank"><img src="img/logo2.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo3.png" target="_blank"><img src="img/logo3.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo4.png" target="_blank"><img src="img/logo4.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo5.png" target="_blank"><img src="img/logo5.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo6.png" target="_blank"><img src="img/logo6.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo7.png" target="_blank"><img src="img/logo7.png" width="100%" height="100%" alt=""></a></li>
+			<li class="carousel-item"><a href="img/logo8.png" target="_blank"><img src="img/logo8.png" width="100%" height="100%" alt=""></a></li>
+		</ul>
+		<div class="carousel-btn carousel-next-btn"></div>
+	</div>
+	<script>
+		// 实例Carousel对象
+		Carousel.init($(".J_Carousel"));
+
+
+	</script>
+</body>
+</html>
